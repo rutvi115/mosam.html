@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fce4ec;
+            padding: 20px;
+        }
+        #proposal-container {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        button {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter ur Name:</h2>
+    <input type="text" id="friendName" placeholder="Enter name here">
+    <button onclick="showProposal()">Open Letter</button>
+    
+    <div id="proposal-container">
+        <h2>Dear <span id="nameDisplay"></span>,</h2>
+        <p>U R a god gift that im blessed with 
+        app hena woh gaane ki tarah ho EK LADKI KO DEKHA TO ESA LAGGA!!
+        gulaboojii friends to har koi hoy jj che but sabse mude ke baat ye hai ki kon 
+        last tak nibhata, jese chai biscuit ka saath kabhi nahi chodti. wese dosti bhi
+        eshi honi chahiye AUR HAPPINESS KI BAAT YE HAI KI APP CHAI JESE HO.
+        kyunki mujhe pata hai app kabhi kisko hurt nai karoge.
+        APSE MILNA ee mara bestest LUCK hata, i dont know but tamari sathe ek alag
+        jj khushi lage. U KNOW MANE TAMARI LANGUAGE NAI SAMJATII>> IM SOORYY but 
+        tamara thi vaat karine mind fresh thai jay. Everyone say that girls are the same Always
+        but tame aa vat bada ni khoti prove kari. tamari lifestyle and the positivity that 
+        u spread is so energetic. LUCKY TO HUMARE DEVARJII HAI JINHE APP MILE.
+        ek riddle apki liye            UR THE CHUTNEY TO MY SAMOSA,
+                                UR THE KIT TO MY KAT AND UR THE FIVE TO MY STAR>!! 
+        likhne ke liye to 100 pen bhi khatam ho jay itne sare gun hai apme. GODJII kare u 
+    Always stay happy and blessed. may u have alot of HAPPINESS and laughters ahead.
+with that tamne ek mast krishna jii mali jay so hun bhi emne jiju kai saku haha.&#128512;
+app ko bhagwan jii har khushi adda kare.app jo mago woh mile. </p>
+        <p>Will you be mine forever #sister?</p>
+        <h3>&#129312; Yours Always &#128512;</h3>
+    </div>
+    
+    <script>
+        function showProposal() {
+            var name = document.getElementById("friendName").value;
+            if (name.trim() === "") {
+                alert("Please enter a name!");
+                return;
+            }
+            document.getElementById("nameDisplay").innerText = name;
+            document.getElementById("proposal-container").style.display = "block";
+        }
+    </script>
+</body>
+</html>
